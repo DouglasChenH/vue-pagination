@@ -2,8 +2,13 @@ module.exports = {
     template: '<nav>' +
         '<ul class="pagination">' +
             '<li v-if="pagination.current_page > 1">' +
-                '<a href="#" aria-label="Previous" @click.prevent="changePage(pagination.current_page - 1)">' +
+                '<a href="#" aria-label="First" @click.prevent="changePage(1)">' +
                     '<span aria-hidden="true">&laquo;</span>' +
+                '</a>' +
+            '</li>' +
+            '<li v-if="pagination.current_page > 1">' +
+                '<a href="#" aria-label="Previous" @click.prevent="changePage(pagination.current_page - 1)">' +
+                    '<span aria-hidden="true">&lsaquo;</span>' +
                 '</a>' +
             '</li>' +
             '<li v-for="num in array" :class="{\'active\': num == pagination.current_page}">' +
@@ -11,6 +16,11 @@ module.exports = {
             '</li>' +
             '<li v-if="pagination.current_page < pagination.last_page">' +
                 '<a href="#" aria-label="Next" @click.prevent="changePage(pagination.current_page + 1)">' +
+                    '<span aria-hidden="true">&rsaquo;</span>' +
+                '</a>' +
+            '</li>' +
+            '<li v-if="pagination.current_page < pagination.last_page">' +
+                '<a href="#" aria-label="Last" @click.prevent="changePage(pagination.last_page)">' +
                     '<span aria-hidden="true">&raquo;</span>' +
                 '</a>' +
             '</li>' +
@@ -62,8 +72,10 @@ module.exports = {
     },
     methods: {
         changePage: function (page) {
-            this.$set('pagination.current_page', page);
-            this.callback();
+            if (this.pagination.current_page !== page) {
+                this.$set('pagination.current_page', page);
+                this.callback();
+            }   
         }
     }
 };
