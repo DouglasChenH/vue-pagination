@@ -1,13 +1,13 @@
 # vue-pagination
-Modified Vue pagination component for Vue.js 1.x based on [vue-pagination](https://github.com/Media24si/vue-pagination). I added links to first and last pages of pagination and also changed icons. 
+Modified Vue pagination component for Vue.js 1.x based on [vue-pagination](https://github.com/Media24si/vue-pagination). I added links to first and last pages of pagination and also changed icons for personal use. Installation information below is for original [vue-pagination](https://github.com/Media24si/vue-pagination).
 
 ### Screenshots
 
 #### Original
-![image](https://github.com/DouglasChenH/vue-pagination/tree/develop/original.png)
+![image](https://github.com/DouglasChenH/vue-pagination/blob/develop/original.png)
 
 #### Modified(Now)
-![image](https://github.com/DouglasChenH/vue-pagination/tree/develop/modified.png)
+![image](https://github.com/DouglasChenH/vue-pagination/blob/develop/modified.png)
 
 
 ## Original README.md
