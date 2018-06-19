@@ -4,10 +4,10 @@ Modified Vue pagination component for Vue.js 1.x based on [vue-pagination](https
 ### Screenshots
 
 #### Original
-![image](https://github.com/DouglasChenH/vue-pagination/raw/master/original.png)
+![image](https://github.com/DouglasChenH/vue-pagination/tree/develop/original.png)
 
 #### Modified(Now)
-![image](https://github.com/DouglasChenH/vue-pagination/raw/master/modified.png)
+![image](https://github.com/DouglasChenH/vue-pagination/tree/develop/modified.png)
 
 
 ## Original README.md
